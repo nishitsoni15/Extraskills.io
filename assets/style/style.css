@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* :is is not overriden */
+.my-class-is{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.my-class-is :is(p, li, section) em{
+  background: yellow;
+  
+}
+.my-class-is em {
+  background: red;
+}
+
+
+
+/* :where is overriden */
+.my-class-where {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.my-class-where :where(p, li, section) em {
+  background: yellow;
+}
+.my-class-where em {
+  background: red;

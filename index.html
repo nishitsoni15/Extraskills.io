@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:is() & :where()</title>
+    <link href="./assets/style/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="my-class-is">
+        <h2>:is Stays Yellow as It's Not Overriden</h2>
+        <p>:is paragraph <em>paragraph</em> paragraph</p>
+        <ul>
+          <li><em>:is List item 1</em></li>
+          <li>:is List item 2</li>
+        </ul>
+        <section>:is section <em>section</em> section</section> 
+      </div>
+      <div class="my-class-where">
+        <h2>:where Turns Red as It's Overriden</h2>
+        <p>:where paragraph <em>paragraph</em> paragraph</p>
+        <ul>
+          <li><em>:where List item 1</em></li>
+          <li>:where List item 2</li>
+        </ul>
+        <section>:where section <em>section</em> section</section> 
+      </div>
+      
+      
+      
+      
+</body>
+</html>
+
+
+<!-- Notes: -->
+
+
+<!-- both are make it possible to reduce repetition in longer CSS selector lists. They can be used to mark unique items within repetitive selectors so that you only have to add one selector instead of several ones. -->
+
+<!-- :is() is never Overriden but :where() is. -->
