@@ -33,3 +33,17 @@
 }
 .my-class-where em {
   background: red;
+}
+
+.pie-chart{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: conic-gradient(red 120deg, green 120deg 240deg, blue 240deg);
+}
+
+.sunburst{
+  width: 70px;
+  height: 70px;
+  background: repeating-conic-gradient(red 0 15deg,darkred 0 30deg);
+}
